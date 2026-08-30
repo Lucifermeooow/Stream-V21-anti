@@ -1,0 +1,24 @@
+name: stream_v21
+description: Stream V21 - GitHub-ready Flutter live streaming client.
+publish_to: 'none'
+version: 21.0.0+21
+
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+  flutter: '>=3.47.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  permission_handler: ^13.0.1
+  rtmp_streaming: ^2.0.1
+  url_launcher: ^6.3.2
+  wakelock_plus: ^1.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
