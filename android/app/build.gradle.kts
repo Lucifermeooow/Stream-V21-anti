@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.ahmed.streamv21"
-    compileSdk = 37
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.ahmed.streamv21"
