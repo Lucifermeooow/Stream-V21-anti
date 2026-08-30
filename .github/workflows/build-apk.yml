@@ -69,8 +69,11 @@ jobs:
       - name: Run Unit/Widget Tests
         run: flutter test
 
-      - name: Build Android Release APK
-        run: flutter build apk --release --android-skip-build-dependency-validation
+      - name: Build Android Release APK via Gradle
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleRelease --no-daemon
 
       - name: Verify and Package APK
         run: |
