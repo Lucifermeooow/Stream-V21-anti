@@ -46,9 +46,13 @@ jobs:
         run: |
           yes | sdkmanager --licenses > /dev/null || true
 
-      - name: Prepare Local Properties
+      - name: Prepare Local Properties & Gradle Properties
         run: |
           echo "flutter.sdk=$FLUTTER_ROOT" > android/local.properties
+          echo "android.useAndroidX=true" >> android/gradle.properties
+          echo "android.enableJetifier=true" >> android/gradle.properties
+          echo "android.nonTransitiveRClass=true" >> android/gradle.properties
+          echo "org.gradle.jvmargs=-Xmx4G -Dfile.encoding=UTF-8" >> android/gradle.properties
 
       - name: Flutter Doctor
         run: flutter doctor -v
