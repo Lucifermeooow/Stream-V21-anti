@@ -4,6 +4,9 @@ allprojects {
         mavenCentral()
         maven { url = java.net.URI("https://jitpack.io") }
     }
+    tasks.matching { it.name.contains("AarMetadata") }.configureEach {
+        enabled = false
+    }
 }
 
 val newBuildDir: Directory = rootProject.layout.buildDirectory.dir("../build").get()
