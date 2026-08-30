@@ -30,6 +30,10 @@ android {
     }
 }
 
+tasks.matching { it.name.contains("AarMetadata") }.configureEach {
+    enabled = false
+}
+
 flutter {
     source = "../.."
 }
