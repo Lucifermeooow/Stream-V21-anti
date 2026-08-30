@@ -1,0 +1,7 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "stream-v21-anti",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-30",
+  "workers_dev": true
+}
