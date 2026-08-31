@@ -9,9 +9,10 @@
     "GOOGLE_CLIENT_ID": "18650771866-userdlenr0c5ldfe6tqollqet84m0rv2.apps.googleusercontent.com"
   },
 
-  "secrets": {
-    "required": [
-      "GOOGLE_CLIENT_SECRET"
-    ]
-  }
+  "kv_namespaces": [
+    {
+      "binding": "OAUTH_KV",
+      "id": "da60f6149aa8473080f95601fe131143"
+    }
+  ]
 }
